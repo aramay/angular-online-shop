@@ -1,7 +1,10 @@
+
+{{productCtrl.productDetails}}
 <!-- FlexSlider -->
+
    <script src="js/imagezoom.js"></script>
    <script defer src="js/jquery.flexslider.js"></script>
-   <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+   <link rel="stylesheet" href="css/flexslider.css" media="screen" />
 
    <script>
    // Can also be used with $(document).ready()
@@ -30,7 +33,10 @@
             <div class="flexslider">
                   <ul class="slides">
                     <li data-thumb="images/show.jpg">
-                        <div class="thumb-image"> <img src="images/show.jpg" data-imagezoom="true" class="img-responsive"> </div>
+                        <div class="thumb-image">
+                            <!-- <img src="images/show.jpg" data-imagezoom="true" class="img-responsive">  -->
+                            <img ng-src="images/show.jpg" data-imagezoom="true" class="img-responsive">
+                        </div>
                     </li>
                     <li data-thumb="images/show1.jpg">
                          <div class="thumb-image"> <img src="images/show1.jpg" data-imagezoom="true" class="img-responsive"> </div>

@@ -3,6 +3,6 @@
 /**
  * Public restaurant application. Includes the common module and ui-router.
  */
-angular.module('public', ['ui.router','ui.bootstrap']);
+angular.module('public', ['ui.router','common','ui.bootstrap']);
 
 })();
