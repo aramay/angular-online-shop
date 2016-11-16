@@ -11,7 +11,7 @@
 
         service.getDetails = function () {
 
-            return $http.get(ApiPath + '/categories').then(function(response){
+            return $http.get(ApiPath + '/categories.json').then(function(response){
                 return response.data;
             });
         };

@@ -26,6 +26,20 @@
     <!-- <script src="js/bootstrap.min.js"></script> -->
     <!--script-->
 
+    <!-- <script src="js/imagezoom.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css" media="screen" /> -->
+
+    <script>
+    // Can also be used with $(document).ready()
+    // $(window).load(function() {
+    //   $('.flexslider').flexslider({
+    //     animation: "slide",
+    //     controlNav: "thumbnails"
+    //   });
+    // });
+    </script>
+
   </head>
   <body ng-app="restaurant" ng-strict-di>
 
@@ -35,7 +49,8 @@
 
             <div class="header-top">
                 <div class="logo">
-                    <a href="index.html">N-AIR</a>
+                    <!-- <a href="index.html">N-AIR</a> -->
+                    <a ui-sref="public.home">N-AIR</a>
                 </div>
 
                 <div class="login-bars">
@@ -177,7 +192,7 @@
     </div>
     <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div> -->
 
-
+    <loading class="loading-indicator"></loading>
 
     <!-- angular ui-view -->
     <ui-view>
@@ -254,14 +269,21 @@
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
-    <script src="lib/ui-bootstrap-tpls-2.2.0.min.js"></script>
+    <!-- <script src="lib/ui-bootstrap-tpls-2.2.0.min.js"></script> -->
 
     <!-- Main Restaurant Module -->
     <script src="src/restaurant.module.js"></script>
 
+    <!-- Common Module -->
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/loading/loading.component.js"></script>
+    <script src="src/common/loading/loading.interceptor.js"></script>
+    <script src="src/common/product.service.js"></script>
+
     <!-- Public Module -->
     <script src="src/public/public.module.js"></script>
     <script src="src/public/public.routes.js"></script>
+    <script src="src/public/products/product.controller.js"></script>
 
     <!-- ADMIN SITE -->
 
