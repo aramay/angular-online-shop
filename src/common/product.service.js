@@ -1,4 +1,5 @@
 (function functionName() {
+    "use strict";
 
     angular.module('common').service('ProductService', ProductService);
 
